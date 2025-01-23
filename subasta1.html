@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subasta Mona Lisa</title>
+    <link rel="stylesheet" href="galeria.css">
+	<link rel="icon" href="file.png" type="image/x-icon">
+</head>
+
+    <header class="encabezado">
+        <div class="logo">
+            <span><a href="index.html"><img src="file.png"></a></span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="exhibiciones.html">EXHIBICIONES</a></li>
+                <li><a href="subastas.html">SUBASTAS</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+                <li><a href="descubrir.html">TIENDA</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+            </ul>
+        </nav>
+    </header>
+	
+<style>
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-family: Arial, sans-serif;
+}
+
+/* Contenedor principal */
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Encabezado */
+h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Inputs y selects */
+.form-control, .form-select {
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 1rem;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  transition: border-color 0.3s ease;
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: #80bdff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Labels */
+.form-label {
+  font-weight: bold;
+  color: #555;
+}
+
+/* Términos y condiciones */
+.form-check-label a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.form-check-label a:hover {
+  text-decoration: underline;
+}
+
+/* Botones */
+.btn {
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-success {
+  background-color: #28a745;
+  border: none;
+  color: #fff;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+  box-shadow: 0 4px 8px rgba(40, 167, 69, 0.3);
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border: none;
+  color: #fff;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+  box-shadow: 0 4px 8px rgba(220, 53, 69, 0.3);
+}
+
+/* Texto centrado */
+.text-center {
+  text-align: center;
+}
+
+/* Espaciado adicional */
+.mb-3 {
+  margin-bottom: 1rem !important;
+}
+
+.mb-5 {
+  margin-bottom: 2rem !important;
+}
+
+.mt-3 {
+  margin-top: 1rem !important;
+}
+.col-md-4 img {
+  max-width: 70%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mt-5 {
+  margin-top: 2rem !important;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .container {
+    margin: 20px auto;
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+</style>
+<body>
+    <div class="container">
+    <h2>Subasta Mona Lisa</h2>
+	<br>
+    <div class="col-md-4">
+        <img src="monalisa.jpeg" alt="Mona Lisa">
+    </div>
+	<form action="https://formsubmit.co/andyjeffersoncruzcruzusuario@gmail.com" METHOD="POST">
+	    <p>La puja inicial o precio base, es<br> de <b>$100</b>. A partir de este monto, los participantes de la subasta realizan ofertas para adquirir el bien o servicio.</p>
+        <br>
+		<!-- Nombre -->
+        <div class="mb-3">
+          <label class="form-label" for="i_nombre">Nombre</label>
+          <input class="form-control" type="text" id="i_nombre" name="nombre" placeholder="Tu nombre" required>
+        </div>
+		<br>
+        <!-- Correo Electrónico -->
+        <div class="mb-3">
+          <label class="form-label" for="i_correo">Correo Electrónico</label>
+          <input class="form-control" type="email" id="i_correo" name="correo" placeholder="Tu correo" required>
+        </div>
+        <br>
+		<!-- Campo de oferta -->
+	    <div class="mb-3">
+		  <label class="form-label" for="oferta">Oferta</label>
+          <input class="form-control" type="number" id="oferta" name="oferta" placeholder="Ingresa tu oferta ($)" step="100" required>
+	    </div>
+		<br>
+	    <!-- Botón Enviar y Cancelar -->
+        <div class="text-center">
+          <button class="btn" type="submit">Enviar</button>
+        </div>
+		
+    </form>
+</body>
+<footer>
+        <p>&copy; 2024 Galería Dibujos <b>Dylan & Andy</b>. Todos los derechos reservados.</p>
+    </footer>
+</html>

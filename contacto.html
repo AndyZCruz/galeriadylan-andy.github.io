@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Adquirir</title>
+    <link rel="stylesheet" href="galeria.css">
+	<link rel="icon" href="file.png" type="image/x-icon">
+</head>  
+	<header class="encabezado">
+        <div class="logo">
+            <span><a href="index.html"><img src="file.png"></a></span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="exhibiciones.html">EXHIBICIONES</a></li>
+                <li><a href="subastas.html">SUBASTAS</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+                <li><a href="descubrir.html">TIENDA</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+            </ul>
+        </nav>
+    </header>
+	<style>
+	    form {
+		    padding: 50px 55px;
+			box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+			border-radius: 20px;
+			text-align: center;
+			width: 340px;
+		}
+		.contacto-form {
+		    display: flex;
+			flex-direction: column;
+			text-align: left;
+			
+			display: flex;
+            justify-content: center;
+            align-items: center;
+		}		
+		h2 {
+		    color: #283629;
+			font-size: 35px;
+		}		
+		label {
+		    color: #283629;
+			font-size: 15px;
+			font-weight: 600px;
+			margin-bottom: 15px;
+		}		
+		input, textarea {
+		    padding: 17px 25px;
+			border-radius: 25px;
+			margin-bottom: 20px;
+			background-color: #EDFFF0;
+			border: 2px solid #F0FAF1;
+			color: #283629;
+			outline: none;
+		}		
+		input::placeholder, textarea::placeholder{
+		    color: #b5cab6;
+		}		
+		form-txt {
+		    margin-bottom: 30px;
+			display: flex;
+			justify-content: space-between;
+			text-align: center;
+		}		
+		form-txt a {
+		    color: #76b28e;
+			font-size: 14px;
+			font-weight: 600;
+			text-decoration: none;
+		}		
+		@media(max-width:991px){
+		    
+			body {
+			    padding: 30px;
+			}
+			
+			form {
+			    padding: 50px 30px;
+				width: 100%;
+			}
+			
+			input {
+			    padding: 15px;
+			}
+		}        
+		.button-name {
+            align-items: center;
+            appearance: none;
+            background-color: #fcfcfd;
+            border-radius: 4px;
+            border-width: 0;
+            box-shadow:
+                rgba(45, 35, 66, 0.2) 0 2px 4px,
+                rgba(45, 35, 66, 0.15) 0 7px 13px -3px,
+                #d6d6e7 0 -3px 0 inset;
+            box-sizing: border-box;
+            color: #36395a;
+            cursor: pointer;
+            display: inline-flex;
+                height: 48px;
+            justify-content: center;
+            line-height: 1;
+            list-style: none;
+            overflow: hidden;
+            padding-left: 16px;
+            padding-right: 16px;
+            position: relative;
+            text-align: left;
+            text-decoration: none;
+            transition:
+                box-shadow 0.15s,
+                transform 0.15s;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            white-space: nowrap;
+            will-change: box-shadow, transform;
+            font-size: 18px;
+        }
+        .button-name:focus {
+            box-shadow:
+                #d6d6e7 0 0 0 1.5px inset,
+                rgba(45, 35, 66, 0.4) 0 2px 4px,
+                rgba(45, 35, 66, 0.3) 0 7px 13px -3px,
+                #d6d6e7 0 -3px 0 inset
+			;
+        }
+        .button-name:hover {
+            box-shadow:
+                rgba(45, 35, 66, 0.3) 0 4px 8px,
+                rgba(45, 35, 66, 0.2) 0 7px 13px -3px,
+                #d6d6e7 0 -3px 0 inset
+			;
+            transform: translateY(-2px);
+        }
+        .button-name:active {
+            box-shadow: #d6d6e7 0 3px 7px inset;
+            transform: translateY(2px);
+        }
+
+	</style>
+<body>
+<div class="contacto-form">
+  <br>
+  <h2>Guayaquil</h2>
+  <br>
+  <p><b>Andy telf:</b> 0967902096   &   <b>Dylan telf:</b> 0989295100</p>
+  <br>
+ <form action="https://formsubmit.co/andyjeffersoncruzcruzusuario@gmail.com" method="POST">
+    <h2>Contacto</h2><br>
+    <label for="nombre">Nombres:</label>
+    <input type="text" name="name" id="name" placeholder="Nombre">    
+    <label for="phone">Teléfono:</label>
+    <input type="tel" name="phone" id="phone" placeholder="Teléfono">	
+	<label for="email">Email:</label>
+    <input type="email" name="email" id="email" placeholder="Email">	
+	<label for="nombre">Nombre de la obra</label>
+    <input type="text" name="name-obra" id="name-obra" placeholder="Obra">	
+	<label for="message">Mensaje</label>
+	<textarea name="message" id="message" cols="20" rows="5" placeholder="Mensaje"></textarea>	
+	<button class="button-name" role="button">Enviar</button>
+ </form>
+</div>
+</body>
+</body>
+    <footer>
+        <p>&copy; 2024 Galería Dibujos <b>Dylan & Andy</b>. Todos los derechos reservados.</p>
+    </footer>
+    <script src="scripts.js">
+      // Si necesitas agregar alguna funcionalidad dinámica, puedes usar este archivo
+     document.addEventListener('DOMContentLoaded', function() {
+        console.log("Página cargada exitosamente");
+     });
+    </script> 
+</html>
